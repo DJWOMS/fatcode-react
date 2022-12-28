@@ -12,7 +12,6 @@ export const getGuideCategories = createAsyncThunk(
   async () => {
     const response = await axios.get('api/help-center/guides/categories');
     const data = await response.data;
-
     return data;
   }
 );

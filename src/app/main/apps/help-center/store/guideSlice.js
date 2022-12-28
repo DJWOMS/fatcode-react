@@ -7,6 +7,7 @@ export const getGuide = createAsyncThunk(
     const response = await axios.get(`/api/help-center/guides/${categorySlug}/${guideSlug}`);
 
     const data = await response.data;
+    console.log(data)
 
     return data;
   }
