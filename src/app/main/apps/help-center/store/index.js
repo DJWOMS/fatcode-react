@@ -5,6 +5,7 @@ import guides from './guidesSlice';
 import guide from './guideSlice';
 import faqCategories from './faqCategoriesSlice';
 import guideCategories from './guideCategoriesSlice';
+import support from './supportSlice';
 
 const reducer = combineReducers({
   guide,
@@ -13,6 +14,7 @@ const reducer = combineReducers({
   faqs,
   faqCategories,
   faqsMost,
+  support
 });
 
 export default reducer;
